@@ -1,10 +1,10 @@
-package com.rangerforce.socketqueues;
+package com.rangerforce.ibmmq;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SocketQueuesApplicationTests {
+class IbmMqApplicationTests {
 
 	@Test
 	void contextLoads() {

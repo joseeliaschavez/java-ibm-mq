@@ -1,7 +1,16 @@
-# java-socket-queues
-An example SpringBoot application showcasing using a request/response queue pattern with websockets.
+# Java IBM MQ Example
+An example SpringBoot application showcasing using a request/response queue pattern with a REST API.
 
 ## Getting Started
+
+### Install IBM MQ Queue Manager
+
+Follow [these instructions](https://developer.ibm.com/learningpaths/ibm-mq-badge/create-configure-queue-manager/) to run an IBM MQ Queue Manager locally using Docker.
+
+#### For MacOS Apple Silicon
+
+You'll first need to run the [following instructions](https://community.ibm.com/community/user/integration/blogs/richard-coppen/2023/06/30/ibm-mq-9330-container-image-now-available-for-appl) 
+to build a custom Docker image for IBM MQ Server. This is necessary because the official IBM MQ Server image does not support MacOS Apple Silicon.
 
 ### Reference Documentation
 For further reference, please consider the following sections:

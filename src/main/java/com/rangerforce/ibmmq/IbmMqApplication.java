@@ -1,13 +1,13 @@
-package com.rangerforce.socketqueues;
+package com.rangerforce.ibmmq;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SocketQueuesApplication {
+public class IbmMqApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SocketQueuesApplication.class, args);
+		SpringApplication.run(IbmMqApplication.class, args);
 	}
 
 }
