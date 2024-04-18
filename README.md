@@ -1,4 +1,8 @@
 # Java IBM MQ Example
+
+<img  alt="Spock Logo" src="https://open-logix.com/wp-content/uploads/2019/11/ibm-mq.png" width="100">
+<img  alt="Spock Logo" src="https://spring.io/img/projects/spring-boot.svg" width="100">
+
 An example SpringBoot application showcasing using a request/response queue pattern with a REST API.
 
 ## Getting Started
