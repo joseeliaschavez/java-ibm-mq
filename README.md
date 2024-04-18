@@ -3,7 +3,9 @@ An example SpringBoot application showcasing using a request/response queue patt
 
 ## Getting Started
 
-### Install IBM MQ Queue Manager
+### IBM MQ Server
+
+#### Install IBM MQ Queue Manager (Windows and Linux)
 
 Follow [these instructions](https://developer.ibm.com/learningpaths/ibm-mq-badge/create-configure-queue-manager/) to run an IBM MQ Queue Manager locally using Docker.
 
@@ -11,6 +13,31 @@ Follow [these instructions](https://developer.ibm.com/learningpaths/ibm-mq-badge
 
 You'll first need to run the [following instructions](https://community.ibm.com/community/user/integration/blogs/richard-coppen/2023/06/30/ibm-mq-9330-container-image-now-available-for-appl) 
 to build a custom Docker image for IBM MQ Server. This is necessary because the official IBM MQ Server image does not support MacOS Apple Silicon.
+
+Essentially the commands are:
+```shell
+git clone https://github.com/ibm-messaging/mq-container.git
+
+cd mq-container
+
+make build-devserver
+```
+
+Once done, you should have an IBM MQ server image in your local Docker image repository.
+
+### Run IBM MQ Server
+
+You can run the IBM MQ Server using Docker Compose:
+
+```shell
+docker-compose up
+```
+
+Or manually run the container using the following command:
+
+```shell
+docker run --volume qm1data:/mnt/mqm --publish 1414:1414 --publish 9443:9443 --detach --env LICENSE=accept --env MQ_QMGR_NAME=QM1 --env MQ_APP_PASSWORD=passw0rd --env MQ_ADMIN_PASSWORD=passw0rd --name QM1 ibm-mqadvanced-server-dev:9.3.5.0-arm64
+```
 
 ### Reference Documentation
 For further reference, please consider the following sections:
