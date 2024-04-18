@@ -25,7 +25,7 @@ make build-devserver
 
 Once done, you should have an IBM MQ server image in your local Docker image repository.
 
-### Run IBM MQ Server
+#### Run IBM MQ Server
 
 You can run the IBM MQ Server using Docker Compose:
 
